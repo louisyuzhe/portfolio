@@ -1,0 +1,79 @@
+/* Base Styles */
+
+.projectLink {
+	--uiaiElementDisplay: var(--aiElementDisplay, inline-flex);
+	--uiaiElementPadding: var(--aiElementPadding, var(--aiElementPaddingTop, 0) var(--aiElementPaddingRight, 0) var(--aiElementPaddingBottom, 0) var(--aiElementPaddingLeft, 0));
+	--uiaiElementColor: var(--aiElementColor);
+	--uiaiElementLineColor: var(--aiElementLineColor, #000);
+	--uiaiElementPadding: var(--aiElementPadding, 10px);
+	transition: color .3s ease-out;
+	z-index: 1;
+	display: var(--uiaiElementDisplay);
+	position: relative;
+	overflow: hidden;
+	--aiElementLineWeight: 5px;
+	--aiElementLineColor: #26d9d9;
+	--aiElementColor: #1b255a;
+	--aiElementColorHover: #26d9d9;
+	--aiElementPadding: 10px 15px;
+	--aiElementColor: #fff;
+}
+
+a.projectLink {
+	padding: var(--uiaiElementPadding);
+}
+
+button.projectLink {
+	--rButtonPadding: var(--uiaiElementPadding);
+}
+
+.projectLink__label {
+	color: var(--uiaiElementColor);
+  text-align: center;
+  width: -webkit-fill-available;
+	--uiaiElementColorHover: var(--aiElementColorHover);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.projectLink::before,
+.projectLink::after {
+	content: "";
+	background-color: var(--uiaiElementLineColor);
+	opacity: 1;
+	position: absolute;
+	z-index: -1;
+	width: 51%;
+	height: 100%;
+	top: 0;
+	transform: translate3d(0, 0, 0);
+	transition: transform .35s ease-out, opacity .35s ease-out .03s;
+}
+
+.projectLink:hover::before,
+.projectLink:hover::after {
+	opacity: 0;
+	transition-delay: 0s;
+}
+
+/* EFFECTS */
+
+.projectLink::before {
+	left: 0;
+}
+
+.projectLink::after {
+	right: 0;
+}
+
+.projectLink:hover::before {
+	transform: translate3d(-100%, 0, 0) rotate(-45deg);
+}
+
+.projectLink:hover::after {
+	transform: translate3d(100%, 0, 0) rotate(-45deg);
+}
+
+.projectLink:hover .projectLink__label {
+	color: var(--uiaiElementColorHover);
+}
