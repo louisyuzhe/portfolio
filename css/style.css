@@ -40,6 +40,11 @@ article {
   padding: 1em;
 }
 
+p {
+  text-align: left;
+  line-height: 120%;
+}
+
 ol {
   list-style-type: decimal;
   padding: 1em;
