@@ -28,6 +28,7 @@ footer {
 }
 h1 {
   font-size: 3em;
+  padding: .25em 0 .25em 0;
 }
 h2 {
   font-size: 2em;
