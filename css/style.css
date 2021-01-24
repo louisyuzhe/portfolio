@@ -53,6 +53,11 @@ ol {
 }
 
 /* Layout Styles */
+.logo {
+  background:white;
+  border: .5em solid #000;
+}
+
 /* Main Page */
 .mySlides {
   display: none
