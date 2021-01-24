@@ -1,12 +1,8 @@
 /* Base Styles */
-
-h1,
 h2 {
   font-size: 3em; /* 54px / 18px = 3em */
   font-weight: bold;
   font-style: italic;
-  margin: 0 auto 1em auto; /* 18px / 18px = 1em */
-  padding-top: .5em;
   overflow-wrap: break-word;
 }
 
@@ -28,7 +24,8 @@ img {
 
 article{
   background-color: #AAB8C2;
-  margin-bottom: 2em;
+  margin: 1em;
+  border: .5em solid white; /* 9px / 18px = .5em */
 }
 
 section {
@@ -38,6 +35,11 @@ section {
 }
 
 /* Module styles */
+article h3{
+  color: #0085ee;
+  font-weight: bold;
+}
+
 header p {
   color: white;
 }
