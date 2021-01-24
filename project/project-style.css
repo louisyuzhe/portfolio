@@ -1,4 +1,21 @@
+h2 {
+  font-size: 3em; /* 54px / 18px = 3em */
+  font-weight: bold;
+  font-style: italic;
+  overflow-wrap: break-word;
+
+}
+
+section {
+  padding: 1em;
+  margin: 1em;
+}
+
 /* Layout Styles */
+#projectDetails h2 {
+	padding-bottom: .5em;
+}
+
 #project-index {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
