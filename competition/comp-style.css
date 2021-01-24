@@ -1,0 +1,94 @@
+/* Base Styles */
+
+h1,
+h2 {
+  font-size: 3em; /* 54px / 18px = 3em */
+  font-weight: bold;
+  font-style: italic;
+  margin: 0 auto 1em auto; /* 18px / 18px = 1em */
+  padding-top: .5em;
+  overflow-wrap: break-word;
+}
+
+h3{
+  font-size: 2em; /* 36px / 18px = 2em */
+  padding-bottom: 1em;
+}
+
+p {
+  color: black;
+  text-align: left;
+  line-height: 120%;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+article{
+  background-color: #AAB8C2;
+  margin-bottom: 2em;
+}
+
+section {
+  display: grid;
+  padding: 1em;
+  margin: 1em;
+}
+
+/* Module styles */
+header p {
+  color: white;
+}
+
+.sdc-details figure{
+  border: .3em solid black; /* 5.4px / 18px = .3em */
+  background-color: white;
+  padding: 1em;
+  padding-bottom: 2em;
+  margin: .5em;
+}
+
+.sdc-details figcaption{
+  color: black;
+}
+
+/* State styles */
+/* 540px || 540 / 16 = 33.75em */
+@media screen and (min-width: 33.75em) {
+  /* Competition page */
+  .ssh-details p {
+    padding: 1em;
+    padding-top: 0;
+  }
+}
+
+/* 1080px || 1080 / 16 = 67.5em */
+@media screen and (min-width: 67.5em) {
+  /* Competition page */
+  .ssh-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+  .ssh-details h3 {
+    grid-column: 1 / 4; /* Span h2 over all columns */
+  }
+
+  p {
+    font-size: 1.35em; /* 24.3px / 18px = 1.35em */
+  }
+
+  .sdc-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+
+  .sdc-details h3 {
+    grid-column: 1 / 3; /* Span h2 over all columns */
+  }
+}
