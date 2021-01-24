@@ -1,9 +1,8 @@
+/* Base Styles */
 h2 {
   font-size: 3em; /* 54px / 18px = 3em */
   font-weight: bold;
   font-style: italic;
-  margin: 0 auto 1em auto; /* 18px / 18px = 1em */
-  padding-top: .5em;
   overflow-wrap: break-word;
 }
 
