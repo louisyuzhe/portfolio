@@ -277,13 +277,13 @@ img {
 }
 
 #slide1 {
-  background-image:url("/media/chicago1.jpg");
+  background-image:url("../media/chicago1.jpg");
 }
 #slide2 {
-  background-image:url("/media/chicago2.jpg");
+  background-image:url("../media/chicago2.jpg");
 }
 #slide3 {
-  background-image:url("/media/chicago3.jpg");
+  background-image:url("../media/chicago3.jpg");
 }
 .slides p,
 .slides ol {
