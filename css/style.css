@@ -91,12 +91,14 @@ img {
 
 .prev {
   left:0;
+  margin-left: 1em;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  margin-right: 1em;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -212,7 +214,7 @@ img {
 
 .soc li {
 	display: inline-block;
-	margin: 1.2rem;
+	margin: 1rem;
 }
 
 .soc a, .soc svg {
@@ -255,24 +257,52 @@ img {
 	background: #26b5d9;
 }
 
-/* Project Page */
-#projectDetails {
-  width: 100vw-1em;
-}
-.project-details {
-  background-color: #3E424B;
-  border: .5em solid white; /* 9px / 18px = .5em */
-}
-.project-details p,
-.project-details a{
-  text-align: left;
+
+
+/* Main page slide show */
+.slides {
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 60vh; /* You must set a specified height */
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
 }
 
-.project-details a {
-  margin: .5em;
-  width: 10em;
+.slides article {
+  align-self: center;
 }
 
+#slide1 {
+  background-image:url("/media/chicago1.jpg");
+}
+#slide2 {
+  background-image:url("/media/chicago2.jpg");
+}
+#slide3 {
+  background-image:url("/media/chicago3.jpg");
+}
+.slides p,
+.slides ol {
+    background-color: black;
+    line-height: 1.5em;
+    padding: 1em;
+}
+.slides ol {
+    padding: 1em 2em 1em 2em;
+}
+
+.slides li  {
+    padding-top: .5em;
+}
+
+#slide1 img {
+  border-radius: 50%;
+  max-width: 50%;
+}
 
 /* State styles */
 /* 540px || 540 / 16 = 33.75em */
