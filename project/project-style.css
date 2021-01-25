@@ -11,6 +11,22 @@ section {
   margin: 1em;
 }
 
+#project-index a:link,
+#project-index a:visited {
+  color: #0085ee;
+}
+
+#project-index a:link:hover,
+#project-index a:link:active,
+#project-index a:visited:hover {
+  color: white;
+  font-size: 125%;
+}
+
+ol {
+  line-height:1.5em;
+}
+
 /* Layout Styles */
 #projectDetails h2 {
 	padding-bottom: .5em;
