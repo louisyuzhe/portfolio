@@ -32,6 +32,10 @@ section {
   margin: 1em;
 }
 
+.project-details {
+  border: .5em solid white; /* 9px / 18px = .5em */
+  margin-bottom: 1em;
+}
 
 /* State styles */
 /* 540px || 540 / 16 = 33.75em */
@@ -83,6 +87,7 @@ section {
 	--aiElementColorHover: #26d9d9;
 	--aiElementPadding: 10px 15px;
 	--aiElementColor: #fff;
+  width: 30%;
 }
 
 a.projectLink {
