@@ -31,7 +31,9 @@ ol {
 #projectDetails h2 {
 	padding-bottom: .5em;
 }
-
+#projectDetails h3 {
+  font-size: 2em;
+}
 #project-index {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -80,8 +82,8 @@ ol {
     grid-column: 1 / 4; /* Span h2 over all columns */
   }
 
-  p {
-    font-size: 1.35em; /* 24.3px / 18px = 1.35em */
+  p, ol {
+    font-size: 1.15em;
   }
 }
 
