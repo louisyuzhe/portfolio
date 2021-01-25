@@ -40,7 +40,7 @@ function autoSlides() {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(autoSlides, 4000); // Change image every 4 seconds
+  setTimeout(autoSlides, 8000); // Change image every 8 seconds
 }
 
 /* Social Media Links
