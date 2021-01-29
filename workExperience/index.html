@@ -8,6 +8,9 @@
       <link rel="stylesheet" href="../css/style.css" />
       <link rel="stylesheet" href="work-style.css" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/qna"> </script>
+    <link rel="stylesheet" href="../chatbot/chatbot-style.css" />
   </head>
   <body>
     <header id="cover-page">
@@ -33,21 +36,7 @@
             <img src="../media/keysight.jpg"
               alt="Photo of Yuzhe Lim with the team at Keysight Technologies" />
           </figure>
-          <p>
-            I had an exciting internship working as a big data engineering intern
-            at Keysight Technologies during the summer of 2019. My first task was
-            to build a big data analytics system to centralize data coming from
-            multiple applications.
-            I designed three prototypes to inspect the scalability,
-            cost-effectivity, and efficiency of each system. The product of my
-            research includes a data lake, a schema detector that builds data
-            catalog automatically, and SQL statements for high-efficiency
-            interactions with databases.
-            I also built and trained two artificial neural network models
-            (Autoencoder and XGBOD) for data pattern recognition and anomaly
-            detection with 97% accuracy, which ultimately replaced the time taxing
-            manual testing performed by the engineers.
-          </p>
+          <p id="keysight-story">I had an exciting internship working as a big data engineering intern at Keysight Technologies during the summer of 2019. My first task was to build a big data analytics system to centralize data coming from multiple applications. I designed three prototypes to inspect the scalability, cost-effectivity, and efficiency of each system. The product of my research includes a data lake, a schema detector that builds data catalog automatically, and SQL statements for high-efficiency interactions with databases. I also built and trained two artificial neural network models (Autoencoder and XGBOD) for data pattern recognition and anomaly detection with 97% accuracy, which ultimately replaced the time taxing manual testing performed by the engineers.</p>
         </article>
         <article class= "work-details">
           <h3>Intel</h3>
@@ -55,17 +44,7 @@
             <img src="../media/intel.jpg"
               alt="Photo of Yuzhe Lim at Intel" />
           </figure>
-          <p id="intel-story">
-            I spent a semester doing a co-operative education with Intel as an
-            software engineering intern. My responsibility focused on two parallel
-            projects where the first one was to develop a contextual AI chatbot. The
-            most exciting yet challenging part is the chatbot conversation flow
-            design with Natural Language Processing (NLP) tools, which upgraded the
-            scripted chatbot to an artificially intelligent chatbot.
-            For my second task, I developed an interactive Python (TensorFlow and
-            pandas) based analysis tool, which involves data mining and data
-            modeling to provide useful intelligence to the team.
-          </p>
+          <p id="intel-story">I spent a semester doing a co-operative education with Intel as an software engineering intern. My responsibility focused on two parallel projects where the first one was to develop a contextual AI chatbot. The most exciting yet challenging part is the chatbot conversation flow design with Natural Language Processing (NLP) tools, which upgraded the scripted chatbot to an artificially intelligent chatbot. For my second task, I developed an interactive Python (TensorFlow and pandas) based analysis tool, which involves data mining and data modeling to provide useful intelligence to the team.</p>
         </article>
       </section>
     </main>
@@ -101,5 +80,6 @@
       </ul>
       <small>Site content and design © Yuzhe Lim.</small>
     </footer>
+    <script type="text/javascript" src="../chatbot/chatbot-script.js"></script>
   </body>
 </html>
