@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>NLP Q&A Platform</title>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="chatbot-style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/qna"> </script>
+    <script type="text/javascript" src="chatbot-script.js"></script>
+  </head>
+  <body>
+    <p id="passage" hidden></p>
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+      <h1>Q&A Chatbot</h1>
+      <div id="conversation">
+          <p class="container left-chat">Hello! Ask me about my work experience.</p>
+      </div>
+      <form action="/action_page.php" class="form-container">
+        <textarea placeholder="Type message.." id="userInput" required></textarea>
+        <div id="actionBox">
+          <input type='button' id='sendMsg' class="btn" name='sendMsg' value='Send'/>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
