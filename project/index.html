@@ -38,6 +38,7 @@
             <li><a href="#lstmForecast">LSTM Models for Time Series Forecasting</a></li>
             <li><a href="#dlForecast">Deep learning model for Time Series Forecasting</a></li>
             <li><a href="#neuralNilm">Neural NILM: Deep Neural Networks Applied to Energy Disaggregation</a></li>
+            <li><a href="#mlAzureBC">Two-Class Boosted Decision Tree Model using Azure Machine Learning Studio</a></li>
           </ol>
         </article>
         <article class="project-category">
@@ -247,6 +248,44 @@
           </p>
           <a href="https://github.com/louisyuzhe/MachineLearning_NILM" class="projectLink">
             <span class="projectLink__label">View project</span>
+          </a>
+        </article>
+        <article class="project-details" id="mlAzureBC">
+          <h3>Two-Class Boosted Decision Tree Model using Azure Machine Learning Studio</h3>
+          <figure>
+            Model training pipeline
+            <img src="../media/project/two-class-boosted-decision-tree-classifier-training.PNG"
+              alt="Two-Class Boosted Decision Tree training model implemented in Azure ML Studio" style="width:45vw;"/>
+          </figure>
+          <figure>
+            Model deployment pipeline
+            <img src="../media/project/two-class-boosted-decision-tree-classifier-deploy.PNG"
+              alt="Two-Class Boosted Decision Tree model deployed in Azure ML Studio" style="width:45vw;"/>
+          </figure>
+          <p>
+            Built a Machine Learning pipeline in Microsoft Azure Machine
+            Learning Studio to train, evaluate, and deploy a binary
+            classification model for predicting an individual's income in the
+            US. The estimator used in this project is a Two-Class Boosted
+            Decision Tree classifier. The pipeline includes
+            <ol>
+              <li>Data Cleaning: Substitute missing values and exclude irrelevant columns</li>
+              <li>Upsampling training data to account for Class Imbalance</li>
+              <li>Training the model and hyperparameter tuning</li>
+              <li>Scoring and Evaluating the Model</li>
+              <li>Deploying the Trained Model as a Web Service for inference</li>
+            </ol>
+          </p>
+          <a href="https://gallery.azure.ai/Experiment/Two-Class-Boosted-Decision-Tree-Model-to-Predict-Adult-Income-in-US-Training" class="projectLink">
+            <span class="projectLink__label">View model training pipeline</span>
+          </a>
+          <a href="https://gallery.azure.ai/Experiment/Two-Class-Boosted-Decision-Tree-Model-to-Predict-Adult-Income-in-US-Deployment" class="projectLink">
+            <span class="projectLink__label">View model deployment pipeline</span>
+          </a>
+          <br>
+          <p>A pipeline is also created to compare the performance between one model trained on the upsampled data and the other with the original pre-processed data.</p>
+          <a href="https://gallery.azure.ai/Experiment/Two-Class-Boosted-Decision-Tree-classifier-Model-comparison" class="projectLink">
+            <span class="projectLink__label">View models comparison pipeline</span>
           </a>
         </article>
         <article class="project-details" id="mysqlExcel">
